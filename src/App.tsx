@@ -22,6 +22,7 @@ import {
 // import { Input } from "@/components/ui/input";
 // import { Textarea } from "@/components/ui/textarea";
 // import { Label } from "@/components/ui/label";
+import reactLogo from "./assets/Laura.jpeg";
 
 function App() {
   // const handleSubmit = (e: React.FormEvent) => {
@@ -101,7 +102,7 @@ function App() {
               <div className="relative">
                 <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
                   <img
-                    src="/assets/Laura.jpeg"
+                    src={reactLogo}
                     alt="Laura Ponce Allende"
                     className="w-full h-full object-cover"
                   />
