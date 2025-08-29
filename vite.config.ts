@@ -12,5 +12,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["lucide-react"],
   },
-  base: "https://alekz7.github.io/laurita/",
+  base: "/laurita/",
 });
