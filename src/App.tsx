@@ -1,17 +1,34 @@
-import React from 'react';
-import { Leaf, Scale, Shield, Mountain, TreePine, Mail, Phone, MapPin, Linkedin, Mail as MailIcon } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { Label } from '@/components/ui/label';
+// import React from "react";
+import {
+  Leaf,
+  Scale,
+  Shield,
+  Mountain,
+  TreePine,
+  // Mail,
+  // Phone,
+  // MapPin,
+  Linkedin,
+  Mail as MailIcon,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+// import { Input } from "@/components/ui/input";
+// import { Textarea } from "@/components/ui/textarea";
+// import { Label } from "@/components/ui/label";
 
 function App() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted');
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission
+  //   console.log("Form submitted");
+  // };
 
   return (
     <div className="min-h-screen bg-white">
@@ -32,7 +49,7 @@ function App() {
             <TreePine size={90} />
           </div>
         </div>
-        
+
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <div className="flex justify-center mb-8">
             <div className="p-4 bg-white/10 rounded-full backdrop-blur-sm">
@@ -45,8 +62,8 @@ function App() {
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-light">
             Especialista en Derecho Ambiental y Regulación Industrial en México
           </p>
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-white text-[#234F32] hover:bg-white/90 text-lg px-8 py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Agenda tu consulta
@@ -64,10 +81,14 @@ function App() {
               </h2>
               <div className="w-20 h-1 bg-[#3E7A5E] mb-8"></div>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Soy <strong className="text-[#234F32]">Laura Ponce Allende</strong>, abogada con más de 10 años de experiencia en Derecho Ambiental y Regulación Industrial.
+                Soy{" "}
+                <strong className="text-[#234F32]">Laura Ponce Allende</strong>,
+                abogada con más de 10 años de experiencia en Derecho Ambiental y
+                Regulación Industrial.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Mi compromiso es ofrecer soluciones legales sólidas que protejan tanto a las empresas como al medio ambiente.
+                Mi compromiso es ofrecer soluciones legales sólidas que protejan
+                tanto a las empresas como al medio ambiente.
               </p>
               <div className="flex items-center gap-4 mt-8">
                 <div className="flex items-center gap-2 text-[#3E7A5E]">
@@ -79,9 +100,9 @@ function App() {
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative">
                 <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src="/assets/Laura.jpeg" 
-                    alt="Laura Ponce Allende" 
+                  <img
+                    src="/assets/Laura.jpeg"
+                    alt="Laura Ponce Allende"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -103,7 +124,8 @@ function App() {
             </h2>
             <div className="w-20 h-1 bg-[#3E7A5E] mx-auto mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ofrezco servicios especializados en derecho ambiental para empresas y organizaciones comprometidas con la sostenibilidad.
+              Ofrezco servicios especializados en derecho ambiental para
+              empresas y organizaciones comprometidas con la sostenibilidad.
             </p>
           </div>
 
@@ -119,7 +141,9 @@ function App() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600 leading-relaxed">
-                  Cumplimiento normativo, planes de manejo, permisos y licencias ambientales para garantizar el cumplimiento de la legislación vigente.
+                  Cumplimiento normativo, planes de manejo, permisos y licencias
+                  ambientales para garantizar el cumplimiento de la legislación
+                  vigente.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -135,7 +159,9 @@ function App() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600 leading-relaxed">
-                  Entregas legales ante PROFEPA o ASEA, atención a procedimientos administrativos, representación en descargas y emisiones.
+                  Entregas legales ante PROFEPA o ASEA, atención a
+                  procedimientos administrativos, representación en descargas y
+                  emisiones.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -151,7 +177,8 @@ function App() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600 leading-relaxed">
-                  Estrategias legales para operaciones, regularización de emisiones y descargas en sectores de alto impacto ambiental.
+                  Estrategias legales para operaciones, regularización de
+                  emisiones y descargas en sectores de alto impacto ambiental.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -167,7 +194,8 @@ function App() {
               </CardHeader>
               <CardContent>
                 <CardDescription className="text-gray-600 leading-relaxed">
-                  Consultoría NOMs forestales, asesoría en energía y cambio climático para proyectos sostenibles y renovables.
+                  Consultoría NOMs forestales, asesoría en energía y cambio
+                  climático para proyectos sostenibles y renovables.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -184,11 +212,12 @@ function App() {
             </h2>
             <div className="w-20 h-1 bg-[#3E7A5E] mx-auto mb-6"></div>
             <p className="text-lg text-gray-600">
-              ¿Necesitas asesoría legal ambiental? Contáctame para una consulta personalizada.
+              ¿Necesitas asesoría legal ambiental? Contáctame para una consulta
+              personalizada.
             </p>
           </div>
 
-          <Card className="shadow-xl border-0 rounded-2xl">
+          {/* <Card className="shadow-xl border-0 rounded-2xl">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -247,7 +276,7 @@ function App() {
                 </Button>
               </form>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </section>
 
@@ -260,21 +289,23 @@ function App() {
                 <div className="p-2 bg-white/10 rounded-lg">
                   <Scale size={24} />
                 </div>
-                <span className="text-xl font-serif font-bold">Laura Ponce Allende</span>
+                <span className="text-xl font-serif font-bold">
+                  Laura Ponce Allende
+                </span>
               </div>
               <p className="text-white/80">Derecho Ambiental • México</p>
             </div>
-            
+
             <div className="flex items-center gap-6">
-              <a 
-                href="mailto:laura@example.com" 
+              <a
+                href="mailto:arual_ponce@hotmail.com"
                 className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300"
                 aria-label="Email"
               >
                 <MailIcon size={20} />
               </a>
-              <a 
-                href="https://linkedin.com/in/laura-ponce-allende" 
+              <a
+                href="https://linkedin.com/in/laura-ponce"
                 className="p-3 bg-white/10 rounded-full hover:bg-white/20 transition-colors duration-300"
                 aria-label="LinkedIn"
               >
@@ -282,7 +313,7 @@ function App() {
               </a>
             </div>
           </div>
-          
+
           <div className="border-t border-white/20 mt-8 pt-8 text-center">
             <p className="text-white/60">
               © 2025 Laura Ponce Allende. Todos los derechos reservados.
